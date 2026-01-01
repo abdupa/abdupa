@@ -1,33 +1,56 @@
-# Hi there, I'm Abe! 👋
+# Hi there, I'm Abe! 👋 
 
-### **Full-Stack Developer | Web Scraping & AI Content Automation Specialist**
-
-I am a full-stack developer who engineers end-to-end digital solutions. My core strength is building custom applications that automate complex business processes, from initial **data extraction** and **web scraping** to intelligent **AI content generation** and final **publication on platforms like WordPress and WooCommerce**.
-
----
-
-### 🚀 My Primary Project: The ContentPipeline
-
-My flagship project, **ContentPipeline**, is a comprehensive showcase of my skills. It's not just a scraper; it's a full-stack, multi-tenant SaaS platform that automates the entire content lifecycle.
-
-* **Live Demo:** `[Link to your hosted interactive prototype]`
-* **Core Technologies:** FastAPI, React, Celery, Redis, Playwright, Docker
+### Full-Stack Engineer | AI Automation & Distributed Systems Architect
+I architect autonomous systems that bridge the gap between complex data and seamless user experiences. Specializing in **Python (FastAPI)**, **React**, and **High-Performance WordPress Engineering**.
 
 ---
 
-### 🛠️ My Tech Stack
+## 🚀 Featured Engineering Projects
 
-| Backend | Frontend | CMS & E-commerce | Automation & AI | DevOps |
-| :--- | :--- | :--- | :--- | :--- |
-| PHP | React.js | WordPress (Custom Plugins) | Playwright | Docker |
-| Python | JavaScript | WooCommerce (API) | OpenAI (GPT-4o) | Docker Compose |
-| FastAPI | HTML/CSS | WordPress REST API | SEO Best Practices | |
+### 1. ContentGenie AI Pipeline
+* **Distributed Architecture:** Built with FastAPI, utilizing **Celery & Redis** for asynchronous background task orchestration.
+* **AI Intelligence:** Multi-stage reasoning pipeline (Scrapy + GPT-4o) for data nomination, validation, and enrichment.
+* **Live SEO Feedback:** Deep integration with **Google Search Console API** for real-time performance tracking (Clicks/Impressions).
+* **The Tech:** Docker, React, FastAPI, Redis, Celery, OpenAI API.
+
+### 2. Autonomous Market Intelligence Engine (Scrapy + GPT-4o)
+**Industrial-Grade Web Crawler & AI Content Generator**
+- **The Engine:** A high-concurrency **Scrapy** framework designed for deep-web crawling of dynamic marketplace listings.
+- **AI Logic:** Implemented a **Nominate → Validate → Generate** reasoning loop. The system autonomously identifies market competitors and validates them against local caches before generating AI comparison content.
+- **Self-Healing Data:** Built a specialized caching layer that repairs data integrity issues in real-time, reducing manual database maintenance by 90%.
+- **Tech Stack:** Python, Scrapy, GPT-4o, WooCommerce REST API, PIL (WebP Processing).
+
+### 3. Custom WordPress Infrastructure & Plugin Suite
+**High-Performance CMS Engineering for E-commerce & Tech Portals**
+* **Smartphone Specs Engine (GadgetPH):** A bespoke indexing system for 500+ technical datasheets. I engineered an AJAX-driven batch processor that reduced cache-rebuild server load and improved page speeds by 70%.
+* **Marketplace Sync Plugins:** Custom-built bridges connecting WooCommerce to external marketplaces (Shopee/Lazada), ensuring stock and price parity.
+* **Batch Analytics Plugin:** Developed a specialized plugin utilizing the **WordPress Transients API** to aggregate complex data points without degrading front-end performance.
+
+### 4. Price Intelligence & Volatility Tracker
+**Real-time Marketplace Monitoring System**
+* **The Tech:** Python (Scrapy), MySQL, D3.js.
+* **Outcome:** Built a self-healing scraper that monitors price fluctuations across 1,000+ listings, visualized through dynamic SVG charts.
+---
+
+## 🛠️ Technical Toolbox
+
+- **Languages:** Python (FastAPI, Scrapy), JavaScript (React, Vite), PHP (WordPress Core).
+- **Data & AI:** OpenAI GPT-4o, Playwright, BeautifulSoup4, SQL (MySQL, PostgreSQL).
+- **Infrastructure:** Docker, Docker Compose, Linux/Ubuntu, Redis Caching.
+- **CMS:** Advanced WooCommerce Scaling, Custom Plugin Development, REST API Integration.
 
 ---
 
-### 📫 Let's Connect
+## 📈 Recent Engineering Highlights
+- **Reduced Page Load by 70%:** Engineered an AJAX-driven batch processor for a 500+ item technical specification index (GadgetPH).
+- **Self-Healing Data Pipelines:** Built industrial-grade Scrapy engines with 100% data integrity layers for marketplace monitoring (Shopee/Lazada).
+- **Distributed Analytics:** Implemented a Redis-cached GSC analytics dashboard to handle high-concurrency SEO reporting.
 
-I'm currently available for freelance opportunities. If you have a project that requires a developer with a deep understanding of automation, API integration, or the WordPress ecosystem, I'd love to chat.
+---
 
-* **Upwork:** `https://www.upwork.com/freelancers/~01ff1c00cce81c0675
-* **Email:** `admin@gadgetph.com`
+## 🤝 Connect with Me
+- **💼 Upwork:** [My Official Freelance Journey](https://www.upwork.com/freelancers/abdupa)
+- **💬 Technical Discussion:** Open for collaborations on AI Automation and Scalable Web Systems.
+
+---
+*My objective is to build high-integrity systems that scale with business ambition. Currently focusing on the intersection of LLMs and autonomous data pipelines.*
