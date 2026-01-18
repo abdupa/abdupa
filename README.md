@@ -41,7 +41,7 @@ I architect autonomous systems that bridge the gap between complex data and seam
 ## 🛠️ Technical Toolbox
 
 - **Languages:** Python (FastAPI, Celery, Scrapy), JavaScript (React, Vite), PHP (WordPress Core).
-- * **Stealth & Data:** JA3 Fingerprinting, curl_cffi, Proxy Orchestration, BeautifulSoup4.
+- **Stealth & Data:** JA3 Fingerprinting, curl_cffi, Proxy Orchestration, BeautifulSoup4.
 - **Data & AI:** OpenAI GPT-4o, Playwright, BeautifulSoup4, SQL (MySQL, PostgreSQL).
 - **Infrastructure:** Docker, Docker Compose, Linux/Ubuntu, Redis Caching, PostgreSQL.  
 - **CMS:** Advanced WooCommerce Scaling, Custom Plugin Development, REST API Integration.
