@@ -50,7 +50,7 @@ I architect autonomous systems that bridge the gap between complex data and seam
 
 ## 📈 Recent Engineering Highlights
 * **Reduced Proxy Costs by 40%**: Engineered a self-healing Tiering system for multi-tenant data ingestion.
-* * **70% Improvement in Page Speed**: Refactored AJAX-driven batch processing for a 500+ item technical database (GadgetPH).
+* **70% Improvement in Page Speed**: Refactored AJAX-driven batch processing for a 500+ item technical database (GadgetPH).
 - **Self-Healing Data Pipelines:** Built industrial-grade Scrapy engines with 100% data integrity layers for marketplace monitoring (Shopee/Lazada).
 - **Distributed Analytics:** Implemented a Redis-cached GSC analytics dashboard to handle high-concurrency SEO reporting.
 
