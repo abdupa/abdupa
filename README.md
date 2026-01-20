@@ -11,6 +11,7 @@ I architect autonomous systems that bridge the gap between complex data and seam
 * **Fault Tolerance:** Implemented a **Redis-backed Circuit Breaker** and **Exponential Jitter** to ensure 99.9% uptime against aggressive anti-bot firewalls.
 * **Unit Economics:** Engineered a **Proxy Tiering Escalation** logic that optimizes for cost-efficiency, utilizing US Datacenter proxies before escalating to Residential IPs.
 * **Stealth:** Utilizes **JA3/TLS Fingerprinting** to mimic high-fidelity browser profiles (iOS/Chrome/Safari).
+* **Architecture:** Utilizes **Distributed Task Queue (Celery/Redis) with a **PostgreSQL (JSONB)** document store for flexible, schema-less data normalization..
 * **Tech Stack:** FastAPI, Celery, Redis, PostgreSQL (JSONB), Docker.
 
 ### 2. ContentGenie AI Pipeline
