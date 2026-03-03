@@ -43,8 +43,3 @@ I architect **autonomous agentic systems** that transform raw data into high-int
 * **Self-Healing Integrity**: Implemented **Pydantic validation layers** to sanitize non-deterministic AI outputs and "self-heal" schema mismatches.
 
 ---
-
-## 🤝 **Connect with Me**
-
-* 💼 **Upwork**: [My Official Freelance Journey](https://www.upwork.com)
-* 💬 **Technical Discussion**: Open for collaborations on **Agentic Workflows** and **Distributed Systems**.
