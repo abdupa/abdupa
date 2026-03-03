@@ -8,6 +8,7 @@ I architect **autonomous agentic systems** that transform raw data into high-int
 ## 🚀 **Featured Engineering Projects**
 
 ### **1. [Nexus AI Growth Engine](https://github.com/abdupa/nexus-ai-growth-engine) | Multi-Tenant Autonomous Lead Sniper**
+*🔒 **Private Repository** – Architectural walkthrough or code access available upon request for technical interviews.*
 * **Agentic Orchestration**: Designed a sophisticated **LangGraph** state machine coordinating specialized agents for real-time Discovery (Tavily), Triage (Gemini 2.5 Flash), and Context-Aware Drafting.
 * **Security & Multi-Tenancy**: Engineered absolute data isolation using **UUID v4 tenant scoping** and Supabase Service Role integrity to support 100+ concurrent enterprise clients.
 * **Auditability**: Implemented a comprehensive `execution_audit` system that traces every AI decision, providing full transparency into the "thinking process" of the autonomous engine.
