@@ -20,7 +20,7 @@ I architect **autonomous agentic systems** that transform raw data into high-int
 * **Unit Economics**: Optimized costs by 40% through **Proxy Tiering Escalation** logic (Datacenter → Residential routing).
 * **Architecture**: Distributed Task Queue (Celery/Redis) with a PostgreSQL (JSONB) document store.
 
-### **3. [ContentGenie AI Pipeline] (https://github.com/abdupa/ContentPipeline) **
+### **3. [ContentGenie AI Pipeline](https://github.com/abdupa/ContentPipeline) **
 * **AI Intelligence**: Multi-stage reasoning pipeline (Scrapy + GPT-4o) for autonomous data nomination, validation, and enrichment.
 * **Live SEO Feedback**: Deep integration with **Google Search Console API** for real-time performance tracking (Clicks/Impressions) correlated to automated content runs.
 * **Distributed Scale**: Built with FastAPI, utilizing Celery & Redis for asynchronous background task orchestration.
