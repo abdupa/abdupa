@@ -1,44 +1,163 @@
 # Hi there, I'm Abe! 👋
-### **Full-Stack Engineer | AI Agent Architect | Distributed Systems Specialist**
 
-I architect **autonomous agentic systems** that transform raw data into high-intent business outcomes. My expertise lies in bridging the gap between complex web ingestion and seamless, AI-orchestrated user experiences.
+**Full-Stack Engineer | AI Systems Architect | Agentic Workflow Builder**
 
----
+I design production-minded systems that turn raw data, fragmented workflows, and user intent into structured, high-value business outcomes.
 
-## 🚀 **Featured Engineering Projects**
+My work sits at the intersection of:
 
-### **1. [Nexus AI Growth Engine](https://github.com/abdupa/nexus-ai-growth-engine) | Multi-Tenant Autonomous Lead Sniper**
-* **Agentic Orchestration**: Designed a sophisticated **LangGraph** state machine coordinating specialized agents for real-time Discovery (Tavily), Triage (Gemini 2.5 Flash), and Context-Aware Drafting.
-* **Security & Multi-Tenancy**: Engineered absolute data isolation using **UUID v4 tenant scoping** and Supabase Service Role integrity to support 100+ concurrent enterprise clients.
-* **Auditability**: Implemented a comprehensive `execution_audit` system that traces every AI decision, providing full transparency into the "thinking process" of the autonomous engine.
-* **Tech Stack**: Python 3.12, FastAPI, LangGraph, Gemini 2.5 Pro/Flash, Supabase (pgvector), Docker, **uv**.
+- **AI-assisted workflow orchestration**
+- **multi-tenant SaaS architecture**
+- **distributed ingestion and automation**
+- **performance-focused web platforms**
+- **deterministic backend systems with clear auditability**
 
-### **2. [Nexus Ingest](https://github.com/abdupa/nexus-ingest) | Universal Stealth Ingestion Engine**
-* **Stealth & Security**: Leverages **JA3/TLS Fingerprinting** to mimic high-fidelity browser profiles and bypass advanced anti-bot layers like Cloudflare and DataDome.
-* **Fault Tolerance**: Implemented a Redis-backed Circuit Breaker and Exponential Jitter for **99.9% uptime** against aggressive firewalls.
-* **Unit Economics**: Optimized costs by 40% through **Proxy Tiering Escalation** logic (Datacenter → Residential routing).
-* **Architecture**: Distributed Task Queue (Celery/Redis) with a PostgreSQL (JSONB) document store.
-
-### **3. [ContentGenie AI Pipeline](https://github.com/abdupa/ContentPipeline)**
-* **AI Intelligence**: Multi-stage reasoning pipeline (Scrapy + GPT-4o) for autonomous data nomination, validation, and enrichment.
-* **Live SEO Feedback**: Deep integration with **Google Search Console API** for real-time performance tracking (Clicks/Impressions) correlated to automated content runs.
-* **Distributed Scale**: Built with FastAPI, utilizing Celery & Redis for asynchronous background task orchestration.
+I enjoy building systems that are not only intelligent, but also operationally reliable, explainable, and scalable.
 
 ---
 
-## 🛠️ **Technical Toolbox**
+## 🚀 Featured Engineering Projects
 
-* **Languages**: Python (FastAPI, Celery, Scrapy), JavaScript (React, Vite, Node.js), PHP (WordPress Core, WooCommerce), Dart (Flutter).
-* **AI & Agentic Frameworks**: **LangGraph**, OpenAI GPT-4o, Google Gemini 2.5 Series, Tavily AI, RAG.
-* **Stealth & Data**: JA3 Fingerprinting, curl_cffi, Proxy Orchestration, BeautifulSoup4, Playwright.
-* **Data & Infra**: **Supabase (PostgreSQL + pgvector)**, Redis, Docker/Compose, Linux/Ubuntu, **uv**.
+### 1. Dealer Flow AI | Multi-Tenant SaaS for Automotive Lead Conversion
+A production-minded MVP for a dealership operations platform that helps move inbound leads toward booked test drives through AI-assisted qualification and deterministic backend workflows.
+
+**What it does**
+- lead and conversation intake
+- AI-assisted qualification behind a dedicated AI boundary
+- deterministic inventory matching with explainable reasons
+- appointment scheduling with availability rules and blackout windows
+- operator-first dashboard for dealer staff
+
+**Why it stands out**
+- designed as a **multi-tenant modular monolith**
+- tenant isolation built into service and data boundaries from day one
+- AI isolated behind an `AiModule`, making model/provider changes easier over time
+- combines **AI assistance** with **deterministic business truth**
+
+**Tech Stack**
+NestJS, Next.js, TypeScript, PostgreSQL, Prisma, Redis, BullMQ, Docker Compose
 
 ---
 
-## 📈 **Engineering Highlights**
+### 2. Nexus AI Growth Engine | Multi-Tenant Autonomous Lead Qualification System
+An agentic workflow platform that coordinates AI-assisted discovery, triage, and drafting to transform inbound business signals into high-intent next steps.
 
-* **90% Reduction in Operational Overhead**: Built self-healing data pipelines for marketplace monitoring (Shopee/Lazada) at GadgetPH.
-* **70% Improvement in Page Speed**: Refactored AJAX-driven batch processing for a 500+ item technical database.
-* **Self-Healing Integrity**: Implemented **Pydantic validation layers** to sanitize non-deterministic AI outputs and "self-heal" schema mismatches.
+**Highlights**
+- designed a **LangGraph-based state machine** coordinating specialized agents
+- built strict multi-tenant isolation using UUID scoping and backend-enforced data boundaries
+- implemented execution audit traces for transparency into AI decisions
+- designed with strong emphasis on explainability and operator trust
+
+**Tech Stack**
+Python, FastAPI, LangGraph, Gemini, OpenAI, Supabase, PostgreSQL, Docker
 
 ---
+
+### 3. Nexus Ingest | Universal Stealth Ingestion Engine
+A resilient ingestion pipeline built for high-friction data collection environments where uptime, routing intelligence, and anti-bot survivability matter.
+
+**Highlights**
+- leveraged **JA3/TLS fingerprinting** and browser-like request strategies
+- implemented Redis-backed circuit breaker patterns and retry orchestration
+- reduced proxy costs through tiered routing logic
+- built for high-volume distributed ingestion workloads
+
+**Tech Stack**
+Python, Celery, Redis, PostgreSQL, Playwright, BeautifulSoup, Docker
+
+---
+
+### 4. ContentGenie AI Pipeline | SEO & Content Automation System
+A multi-stage AI pipeline that converts raw structured data into SEO-ready, publishable outputs with validation and feedback loops.
+
+**Highlights**
+- built autonomous ingestion and enrichment workflows
+- integrated Google Search Console performance signals for live SEO feedback
+- added validation layers to sanitize non-deterministic AI outputs
+- reduced manual publishing overhead dramatically through automation
+
+**Tech Stack**
+Python, FastAPI, Scrapy, GPT-4o, Redis, Google Search Console API
+
+---
+
+## 🛠️ Technical Toolbox
+
+### Languages
+- Python
+- TypeScript / JavaScript
+- PHP
+- SQL
+
+### AI & Automation
+- LangGraph
+- LangChain
+- OpenAI GPT-4o
+- Google Gemini
+- Multi-Agent RAG
+- Prompt Engineering
+- Tool / Function Calling
+
+### Backend & Distributed Systems
+- FastAPI
+- NestJS
+- Node.js
+- Celery
+- Redis
+- BullMQ
+- REST APIs
+- Background job orchestration
+
+### Frontend
+- React
+- Next.js
+- Vite
+- Dashboard-style UI systems
+
+### Data & Infrastructure
+- PostgreSQL
+- Prisma
+- Supabase
+- pgvector
+- Docker / Docker Compose
+- Linux / Ubuntu
+
+### Web, SEO & E-Commerce
+- WordPress
+- WooCommerce
+- Shopify
+- GA4 / GTM
+- Technical SEO
+- Core Web Vitals
+- Marketplace data synchronization
+
+---
+
+## 📈 Engineering Highlights
+
+- **90% reduction in manual operational workload** through AI-assisted automation and structured pipelines
+- **70% improvement in page speed performance** through backend and frontend optimization
+- Built **multi-tenant backend foundations** with strong isolation and clear service boundaries
+- Implemented **validation layers and replay-safe patterns** to keep AI-assisted systems reliable
+- Designed systems with a bias toward **auditability, determinism, and explainable automation**
+
+---
+
+## 🧭 What I Like Building
+
+I’m especially interested in projects involving:
+
+- AI-assisted operator workflows
+- production-ready automation systems
+- multi-tenant SaaS products
+- ingestion + reasoning + action pipelines
+- backend systems with clear domain boundaries
+- business software where correctness matters as much as speed
+
+---
+
+## 📫 Connect With Me
+
+- **GitHub:** [github.com/abdupa](https://github.com/abdupa)
+- **LinkedIn:** [linkedin.com/in/abemael-dupa-b2a768249](https://www.linkedin.com/in/abemael-dupa-b2a768249/)
+- **Email:** dupa.abe@gmail.com
