@@ -6,105 +6,78 @@ I build production-minded systems that turn raw data, fragmented workflows, and 
 
 My work focuses on:
 
-- **AI-assisted workflow automation**
+- **AI-assisted workflow orchestration**
 - **multi-tenant SaaS architecture**
-- **distributed ingestion systems**
+- **distributed ingestion and automation**
 - **performance-focused web platforms**
-- **deterministic backend systems with auditability**
+- **deterministic backend systems with clear auditability**
 
 ---
 
 ## 🚀 Featured Engineering Projects
 
-### 1. [Dealer Flow AI](https://github.com/abdupa/dealer-flow-ai) 🔒
-**Multi-Tenant SaaS for Automotive Lead Conversion**
-
+### 1. [Dealer Flow AI](https://github.com/abdupa/dealer-flow-ai) | Multi-Tenant SaaS for Automotive Lead Conversion
 A production-minded MVP for a dealership operations platform that helps move inbound leads toward booked test drives through AI-assisted qualification and deterministic backend workflows.
 
-> 🔒 **Repository is private. Access can be provided upon request.**
+> **Repository is private. Access can be provided upon request.**
 
-**Highlights**
-- Lead and conversation intake
+**What it does**
+- lead and conversation intake
 - AI-assisted qualification behind a dedicated AI boundary
-- Deterministic inventory matching with explainable reasoning
-- Appointment scheduling with availability rules and blackout windows
-- Operator-first dashboard for dealership staff
+- deterministic inventory matching with explainable reasons
+- appointment scheduling with availability rules and blackout windows
+- operator-first dashboard for dealer staff
 
-**Tech Stack**  
+**Why it stands out**
+- designed as a **multi-tenant modular monolith**
+- tenant isolation built into service and data boundaries from day one
+- AI isolated behind an `AiModule`, making model/provider changes easier over time
+- combines **AI assistance** with **deterministic business truth**
+
+**Tech Stack**
 NestJS, Next.js, TypeScript, PostgreSQL, Prisma, Redis, BullMQ, Docker Compose
 
 ---
 
-### 2. [Autonomous Growth Agent](https://github.com/abdupa/autonomous-growth-agent) 🔒
-**AI-Driven Growth Workflow System**
-
-A private TypeScript-based automation system focused on AI-assisted growth workflows and execution logic.
-
-> 🔒 **Repository is private. Access can be provided upon request.**
-
----
-
-### 3. [Nexus AI Growth Engine](https://github.com/abdupa/nexus-ai-growth-engine)
-**Multi-Tenant Autonomous AI Agent System**
-
-A multi-tenant autonomous AI agent platform built with LangGraph and Gemini for real-time lead discovery, triage, and personalized drafting.
+### 2. [Nexus AI Growth Engine](https://github.com/abdupa/nexus-ai-growth-engine) | Multi-Tenant Autonomous Lead Qualification System
+An agentic workflow platform that coordinates AI-assisted discovery, triage, and drafting to transform inbound business signals into high-intent next steps.
 
 **Highlights**
-- LangGraph-based orchestration for multi-step AI workflows
-- Multi-tenant isolation with strong backend boundaries
-- Real-time lead discovery and intent analysis
-- Personalized drafting with audit-friendly execution flow
+- designed a **LangGraph-based state machine** coordinating specialized agents
+- built strict multi-tenant isolation using UUID scoping and backend-enforced data boundaries
+- implemented execution audit traces for transparency into AI decisions
+- designed with strong emphasis on explainability and operator trust
 
-**Tech Stack**  
-TypeScript, LangGraph, Gemini, Tavily, multi-tenant backend patterns
-
----
-
-### 4. [Nexus Ingest Factory](https://github.com/abdupa/nexus-ingest-factory) 🔒
-**Distributed Ingestion and Data Collection Engine**
-
-A private Python-based ingestion system focused on resilient data acquisition and processing pipelines.
-
-> 🔒 **Repository is private. Access can be provided upon request.**
+**Tech Stack**
+Python, FastAPI, LangGraph, Gemini, OpenAI, Supabase, PostgreSQL, Docker
 
 ---
 
-### 5. [Nexus Ingest](https://github.com/abdupa/nexus-ingest)
-**Stealth Ingestion Engine**
-
-A resilient ingestion pipeline built for high-friction data collection environments where survivability, routing intelligence, and uptime matter.
+### 3. [Nexus Ingest](https://github.com/abdupa/nexus-ingest) | Universal Stealth Ingestion Engine
+A resilient ingestion pipeline built for high-friction data collection environments where uptime, routing intelligence, and anti-bot survivability matter.
 
 **Highlights**
-- Browser-like request strategies
-- Fault-tolerant ingestion patterns
-- Routing and retry orchestration
-- Production-minded ingestion reliability
+- leveraged **JA3/TLS fingerprinting** and browser-like request strategies
+- implemented Redis-backed circuit breaker patterns and retry orchestration
+- reduced proxy costs through tiered routing logic
+- built for high-volume distributed ingestion workloads
 
-**Tech Stack**  
-Python, distributed ingestion tooling, automation pipelines
+**Tech Stack**
+Python, Celery, Redis, PostgreSQL, Playwright, BeautifulSoup, Docker
 
 ---
 
-### 6. [ContentPipeline](https://github.com/abdupa/ContentPipeline)
-**Autonomous AI Content Engine**
-
-A distributed system built with FastAPI, Celery, and Redis for SEO automation and real-time Google Search Console analytics.
+### 4. [ContentPipeline](https://github.com/abdupa/ContentPipeline) | SEO & Content Automation System
+A multi-stage AI pipeline that converts raw structured data into SEO-ready, publishable outputs with validation and feedback loops.
 
 **Highlights**
-- Automated SEO content workflows
-- Distributed task orchestration
-- Real-time performance analytics integration
-- Production-ready background processing
+- built autonomous ingestion and enrichment workflows
+- integrated Google Search Console performance signals for live SEO feedback
+- added validation layers to sanitize non-deterministic AI outputs
+- reduced manual publishing overhead dramatically through automation
 
-**Tech Stack**  
-Python, FastAPI, Celery, Redis, SEO automation systems
-
----
-
-### 7. [SEO Migration Tools](https://github.com/abdupa/seo-migration-tools)
-**SEO Operations and Migration Utilities**
-
-A Python toolkit for SEO migration workflows, process support, and search-related operational tasks.
+**Tech Stack**
+Python, FastAPI, Scrapy, GPT-4o, Redis, Google Search Console API
 
 ---
 
@@ -121,9 +94,9 @@ A Python toolkit for SEO migration workflows, process support, and search-relate
 - LangChain
 - OpenAI GPT-4o
 - Google Gemini
+- Multi-Agent RAG
 - Prompt Engineering
 - Tool / Function Calling
-- Multi-Agent Workflow Design
 
 ### Backend & Distributed Systems
 - FastAPI
@@ -164,9 +137,22 @@ A Python toolkit for SEO migration workflows, process support, and search-relate
 
 - **90% reduction in manual operational workload** through AI-assisted automation and structured pipelines
 - **70% improvement in page speed performance** through backend and frontend optimization
-- Built **multi-tenant backend foundations** with strong isolation and service boundaries
-- Implemented **validation and replay-safe patterns** for reliable AI-assisted systems
+- Built **multi-tenant backend foundations** with strong isolation and clear service boundaries
+- Implemented **validation layers and replay-safe patterns** to keep AI-assisted systems reliable
 - Designed systems with a bias toward **auditability, determinism, and explainable automation**
+
+---
+
+## 🧭 What I Like Building
+
+I’m especially interested in projects involving:
+
+- AI-assisted operator workflows
+- production-ready automation systems
+- multi-tenant SaaS products
+- ingestion + reasoning + action pipelines
+- backend systems with clear domain boundaries
+- business software where correctness matters as much as speed
 
 ---
 
