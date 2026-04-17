@@ -16,7 +16,23 @@ My work focuses on:
 
 ## 🚀 Featured Engineering Projects
 
-### 1. [Dealer Flow AI](https://github.com/abdupa/dealer-flow-ai) | Multi-Tenant SaaS for Automotive Lead Conversion
+### 1. [AI Operations Platform](https://github.com/abdupa/ai-ops-platform) | Multi-Tenant SaaS for B2B Wholesale & Distribution
+
+An enterprise operations platform that automates end-to-end business workflows for Philippines B2B wholesale and distribution — from email triage and quote management to order fulfillment, supplier intake, and daily operational briefs.
+
+**Highlights**
+
+- built 16 Temporal workflows covering inquiry triage, order intake, fulfillment monitoring, quote support, billing disputes, supplier intake, and scheduled operational reports
+- designed a LangGraph AI reasoning layer behind human-in-the-loop approval gates
+- implemented strict per-tenant data isolation with RBAC across five roles enforced server-side
+- built a full audit trail with append-only AuditEvent records for every critical action
+- 168 integration tests against a real PostgreSQL database — no mocks
+
+**Tech Stack** `Python` `FastAPI` `Temporal` `LangGraph` `OpenAI` `PostgreSQL` `pgvector` `Auth0` `Next.js` `TypeScript` `Docker Compose`
+
+---
+
+### 2. [Dealer Flow AI](https://github.com/abdupa/dealer-flow-ai) | Multi-Tenant SaaS for Automotive Lead Conversion
 A production-minded MVP for a dealership operations platform that helps move inbound leads toward booked test drives through AI-assisted qualification and deterministic backend workflows.
 
 > **Repository is private. Access can be provided upon request.**
@@ -39,7 +55,7 @@ NestJS, Next.js, TypeScript, PostgreSQL, Prisma, Redis, BullMQ, Docker Compose
 
 ---
 
-### 2. [Nexus AI Growth Engine](https://github.com/abdupa/nexus-ai-growth-engine) | Multi-Tenant Autonomous Lead Qualification System
+### 3. [Nexus AI Growth Engine](https://github.com/abdupa/nexus-ai-growth-engine) | Multi-Tenant Autonomous Lead Qualification System
 An agentic workflow platform that coordinates AI-assisted discovery, triage, and drafting to transform inbound business signals into high-intent next steps.
 
 **Highlights**
@@ -53,7 +69,7 @@ Python, FastAPI, LangGraph, Gemini, OpenAI, Supabase, PostgreSQL, Docker
 
 ---
 
-### 3. [Nexus Ingest](https://github.com/abdupa/nexus-ingest) | Universal Stealth Ingestion Engine
+### 4. [Nexus Ingest](https://github.com/abdupa/nexus-ingest) | Universal Stealth Ingestion Engine
 A resilient ingestion pipeline built for high-friction data collection environments where uptime, routing intelligence, and anti-bot survivability matter.
 
 **Highlights**
@@ -67,7 +83,7 @@ Python, Celery, Redis, PostgreSQL, Playwright, BeautifulSoup, Docker
 
 ---
 
-### 4. [ContentPipeline](https://github.com/abdupa/ContentPipeline) | SEO & Content Automation System
+### 5. [ContentPipeline](https://github.com/abdupa/ContentPipeline) | SEO & Content Automation System
 A multi-stage AI pipeline that converts raw structured data into SEO-ready, publishable outputs with validation and feedback loops.
 
 **Highlights**
