@@ -18,7 +18,7 @@ My work focuses on:
 
 ### 1. [AI Operations Platform](https://github.com/abdupa/ai-ops-platform) | Multi-Tenant SaaS for B2B Wholesale & Distribution
 
-An enterprise operations platform that automates end-to-end business workflows for Philippines B2B wholesale and distribution — from email triage and quote management to order fulfillment, supplier intake, and daily operational briefs.
+An enterprise operations platform that automates end-to-end business workflows for B2B wholesale and distribution — from email triage and quote management to order fulfillment, supplier intake, and daily operational briefs.
 
 > **Repository is private. Access can be provided upon request.**
 
