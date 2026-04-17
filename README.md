@@ -20,6 +20,8 @@ My work focuses on:
 
 An enterprise operations platform that automates end-to-end business workflows for Philippines B2B wholesale and distribution — from email triage and quote management to order fulfillment, supplier intake, and daily operational briefs.
 
+> **Repository is private. Access can be provided upon request.**
+
 **Highlights**
 
 - built 16 Temporal workflows covering inquiry triage, order intake, fulfillment monitoring, quote support, billing disputes, supplier intake, and scheduled operational reports
