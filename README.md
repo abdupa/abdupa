@@ -44,16 +44,6 @@ evaluation, billing disputes, and scheduled operational intelligence.
 `Python` `FastAPI` `Temporal` `LangGraph` `LangChain` `OpenAI GPT-4o`
 `PostgreSQL` `pgvector` `Auth0` `Next.js` `TypeScript` `Docker`
 
-**Highlights**
-
-- built 16 Temporal workflows covering inquiry triage, order intake, fulfillment monitoring, quote support, billing disputes, supplier intake, and scheduled operational reports
-- designed a LangGraph AI reasoning layer behind human-in-the-loop approval gates
-- implemented strict per-tenant data isolation with RBAC across five roles enforced server-side
-- built a full audit trail with append-only AuditEvent records for every critical action
-- 168 integration tests against a real PostgreSQL database — no mocks
-
-**Tech Stack** `Python` `FastAPI` `Temporal` `LangGraph` `OpenAI` `PostgreSQL` `pgvector` `Auth0` `Next.js` `TypeScript` `Docker Compose`
-
 ---
 
 ### 2. [Dealer Flow AI](https://github.com/abdupa/dealer-flow-ai) | Multi-Tenant SaaS for Automotive Lead Conversion
