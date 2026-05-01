@@ -18,9 +18,31 @@ My work focuses on:
 
 ### 1. [AI Operations Platform](https://github.com/abdupa/ai-ops-platform) | Multi-Tenant SaaS for B2B Wholesale & Distribution
 
-An enterprise operations platform that automates end-to-end business workflows for B2B wholesale and distribution — from email triage and quote management to order fulfillment, supplier intake, and daily operational briefs.
+An enterprise operations platform that automates end-to-end business workflows — email triage, quote management, order intake, supplier 
+evaluation, billing disputes, and scheduled operational intelligence.
 
 > **Repository is private. Access can be provided upon request.**
+
+**Architecture highlights:**
+- 16 Temporal workflows covering the full operational surface: 
+  inquiry triage (W1), order intake (W9), quote support (W10–W11), 
+  complaint & billing handling (W12–W13), supplier intake (W16), 
+  fulfillment monitoring, and scheduled reports
+- LangGraph reasoning layer driving intent classification, 
+  AI draft generation, and corpus-backed retrieval — 
+  all behind human-in-the-loop approval gates
+- Strict per-tenant data isolation with RBAC across five roles, 
+  enforced server-side at every query boundary
+- Full append-only audit trail on every critical action — 
+  designed for compliance and explainability
+- 303 integration tests against a real PostgreSQL database — 
+  zero mocks, full activity coverage
+- Corpus ingestion pipeline with pgvector semantic search 
+  for catalog-backed AI responses
+
+**Tech Stack:**
+`Python` `FastAPI` `Temporal` `LangGraph` `LangChain` `OpenAI GPT-4o`
+`PostgreSQL` `pgvector` `Auth0` `Next.js` `TypeScript` `Docker`
 
 **Highlights**
 
