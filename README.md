@@ -1,188 +1,158 @@
-# Hi there, I'm Abe! 👋
+# Hi, I'm Abe
 
-**Full-Stack Engineer | AI Systems Architect | Agentic Workflow Builder**
+**AI Systems Engineer | Full-Stack Engineer | AI Workflow Automation & Agentic Systems**
 
-I build production-minded systems that turn raw data, fragmented workflows, and user intent into structured, high-value business outcomes.
+I build production-ready AI-powered systems, multi-tenant SaaS platforms, and automation pipelines where reliability, auditability, and real business outcomes matter.
 
-My work focuses on:
+My work usually combines:
 
-- **AI-assisted workflow orchestration**
-- **multi-tenant SaaS architecture**
-- **distributed ingestion and automation**
-- **performance-focused web platforms**
-- **deterministic backend systems with clear auditability**
+- Python, FastAPI, LangGraph, and LangChain for AI pipelines, agent orchestration, and LLM workflows
+- React, Next.js, and TypeScript for operator-facing portals and admin surfaces
+- Temporal for durable workflow orchestration across multi-step business processes
+- multi-tenant SaaS architecture with RBAC, audit trails, and strict data isolation
+- validation-first AI design — Pydantic boundaries between LLM outputs and deterministic business logic
+- integration adapters for real-world channels: email, WhatsApp, web chat, webhooks
 
----
+## Live Work
 
-## 🚀 Featured Engineering Projects
+| Project | Live URL | Focus |
+|---|---|---|
+| AI Operations Platform | https://www.automatriq.com | Multi-tenant B2B SaaS — email, WhatsApp, web chat, 15 Temporal workflows, ops dashboards |
+| AGA Frontend | https://aga-frontend-five.vercel.app/ | AI-assisted growth workflow frontend |
+| GadgetPH | https://gadgetph.com/ | Production web platform, e-commerce/content automation, SEO |
 
-### 1. [AI Operations Platform](https://github.com/abdupa/ai-ops-platform) | Multi-Tenant SaaS for B2B Wholesale & Distribution
+## Featured Projects
 
-An enterprise operations platform that automates end-to-end business workflows — email triage, quote management, order intake, supplier 
-evaluation, billing disputes, and scheduled operational intelligence.
+### AI Operations Platform
 
-> **Repository is private. Access can be provided upon request.**
+**Multi-tenant B2B SaaS for wholesale and distribution operations**  
+Live: [automatriq.com](https://www.automatriq.com) · Repository: private, access on request
 
-**Architecture highlights:**
-- 16 Temporal workflows covering the full operational surface: 
-  inquiry triage (W1), order intake (W9), quote support (W10–W11), 
-  complaint & billing handling (W12–W13), supplier intake (W16), 
-  fulfillment monitoring, and scheduled reports
-- LangGraph reasoning layer driving intent classification, 
-  AI draft generation, and corpus-backed retrieval — 
-  all behind human-in-the-loop approval gates
-- Strict per-tenant data isolation with RBAC across five roles, 
-  enforced server-side at every query boundary
-- Full append-only audit trail on every critical action — 
-  designed for compliance and explainability
-- 303 integration tests against a real PostgreSQL database — 
-  zero mocks, full activity coverage
-- Corpus ingestion pipeline with pgvector semantic search 
-  for catalog-backed AI responses
+A production-deployed, 0→1 enterprise operations platform that automates the full order-to-cash and supplier lifecycle for B2B wholesale and distribution businesses. Every phase was shipped with integration tests against a real PostgreSQL database before the next phase started — no mocks, no shortcuts.
 
-**Tech Stack:**
-`Python` `FastAPI` `Temporal` `LangGraph` `LangChain` `OpenAI GPT-4o`
-`PostgreSQL` `pgvector` `Auth0` `Next.js` `TypeScript` `Docker`
+What I built:
+
+- **17 Temporal workflows** — W1 inquiry triage routing inbound messages to W9 order intake, W10–W11 quote support, W12–W13 support cases and billing disputes, W16 supplier intake, W17 eternal Gmail polling loop, plus scheduled workflows for quote aging, reorder monitoring, dormant accounts, daily operational briefs, fulfillment alerts, and payment follow-ups
+- **Multi-channel adapters** — Gmail OAuth2 with W17 continuous polling, WhatsApp Business API (bidirectional webhook messaging), embedded web chat widget with SSE streaming and live rep handoff, Wix site chat webhook normalizer
+- **AI features** — LangGraph intent classification and AI draft generation behind human-in-the-loop approval gates; GPT-4o order document parser extracting structured line items from unstructured emails and attachments; corpus-backed pgvector semantic retrieval for catalog-aware replies; credit and inventory preflight check before order approval; BIR-compliant invoice PDF generation
+- **Role-based portal** — 12 `/ops` routes spanning five roles: rep order processing queue, manager team dashboard, executive business view, reporting dashboard, live chat interface, approval queue, exception panel, product catalog, and tenant settings
+- **Security and isolation** — Auth0 v4 JWKS verification, per-tenant data isolation enforced server-side at every query boundary (`tenant_id` derived from JWT only, never from request body), append-only audit trail on every critical action
+- **Test coverage** — 365 integration tests, 25 test files, zero mocks, real PostgreSQL — full workflow, activity, channel adapter, AI feature, and RBAC coverage
+
+`Python` `FastAPI` `Temporal` `LangGraph` `OpenAI GPT-4o` `PostgreSQL` `pgvector` `Next.js 16` `TypeScript` `Tailwind CSS v4` `Auth0` `Docker` `Vercel` `Render` `Neon` `pytest`
 
 ---
 
-### 2. [Dealer Flow AI](https://github.com/abdupa/dealer-flow-ai) | Multi-Tenant SaaS for Automotive Lead Conversion
-A production-minded MVP for a dealership operations platform that helps move inbound leads toward booked test drives through AI-assisted qualification and deterministic backend workflows.
+### AGA Frontend
 
-> **Repository is private. Access can be provided upon request.**
+**AI-assisted growth workflow frontend**  
+Live app: https://aga-frontend-five.vercel.app/
 
-**What it does**
-- lead and conversation intake
-- AI-assisted qualification behind a dedicated AI boundary
-- deterministic inventory matching with explainable reasons
-- appointment scheduling with availability rules and blackout windows
-- operator-first dashboard for dealer staff
+Built and deployed a frontend application for an AI-assisted growth workflow product, focused on clear user flows, reusable UI structure, and modern Vercel-based delivery.
 
-**Why it stands out**
-- designed as a **multi-tenant modular monolith**
-- tenant isolation built into service and data boundaries from day one
-- AI isolated behind an `AiModule`, making model/provider changes easier over time
-- combines **AI assistance** with **deterministic business truth**
-
-**Tech Stack**
-NestJS, Next.js, TypeScript, PostgreSQL, Prisma, Redis, BullMQ, Docker Compose
+Tech stack: `React / Next.js`, `TypeScript`, `Vercel`
 
 ---
 
-### 3. [Nexus AI Growth Engine](https://github.com/abdupa/nexus-ai-growth-engine) | Multi-Tenant Autonomous Lead Qualification System
-An agentic workflow platform that coordinates AI-assisted discovery, triage, and drafting to transform inbound business signals into high-intent next steps.
+### GadgetPH
 
-**Highlights**
-- designed a **LangGraph-based state machine** coordinating specialized agents
-- built strict multi-tenant isolation using UUID scoping and backend-enforced data boundaries
-- implemented execution audit traces for transparency into AI decisions
-- designed with strong emphasis on explainability and operator trust
+**Production web platform for product content, SEO, and automation**  
+Live site: https://gadgetph.com/
 
-**Tech Stack**
-Python, FastAPI, LangGraph, Gemini, OpenAI, Supabase, PostgreSQL, Docker
+GadgetPH is a live production platform where I led full-stack development, automation, performance optimization, data workflows, and internal tooling.
 
----
+What I built:
 
-### 4. [Nexus Ingest](https://github.com/abdupa/nexus-ingest) | Universal Stealth Ingestion Engine
-A resilient ingestion pipeline built for high-friction data collection environments where uptime, routing intelligence, and anti-bot survivability matter.
+- business-critical web systems for product data, content publishing, SEO, and admin workflows
+- ingestion and processing pipelines using Scrapy, Playwright, and structured automation
+- internal tools for non-technical operators managing large catalogs and publishing tasks
+- performance improvements through caching, backend optimization, AJAX batch processing, and frontend delivery work
+- distributed task workflows using Celery and Redis
 
-**Highlights**
-- leveraged **JA3/TLS fingerprinting** and browser-like request strategies
-- implemented Redis-backed circuit breaker patterns and retry orchestration
-- reduced proxy costs through tiered routing logic
-- built for high-volume distributed ingestion workloads
+Results:
 
-**Tech Stack**
-Python, Celery, Redis, PostgreSQL, Playwright, BeautifulSoup, Docker
+- reduced manual operational workload by up to **90%**
+- improved website speed and responsiveness by roughly **70%**
+
+Tech stack: `PHP`, `WordPress`, `WooCommerce`, `JavaScript`, `Python`, `Scrapy`, `Playwright`, `Celery`, `Redis`, `PostgreSQL`, `GA4`, `GTM`, `SEO`
 
 ---
 
-### 5. [ContentPipeline](https://github.com/abdupa/ContentPipeline) | SEO & Content Automation System
-A multi-stage AI pipeline that converts raw structured data into SEO-ready, publishable outputs with validation and feedback loops.
+### Dealer Flow AI
 
-**Highlights**
-- built autonomous ingestion and enrichment workflows
-- integrated Google Search Console performance signals for live SEO feedback
-- added validation layers to sanitize non-deterministic AI outputs
-- reduced manual publishing overhead dramatically through automation
+**Multi-tenant SaaS for automotive lead conversion**  
+Repository: private, access available upon request
 
-**Tech Stack**
-Python, FastAPI, Scrapy, GPT-4o, Redis, Google Search Console API
+Dealer Flow AI helps dealership teams move inbound leads toward booked test drives using lead intake, AI-assisted qualification, deterministic inventory matching, appointment scheduling, and operator dashboards.
 
----
+Highlights:
 
-## 🛠️ Technical Toolbox
+- authenticated user workflows and staff-facing dashboards
+- multi-tenant modular monolith architecture
+- scheduling rules, availability windows, and blackout logic
+- AI assistance separated from deterministic business truth
 
-### Languages
-- Python
-- TypeScript / JavaScript
-- PHP
-- SQL
-
-### AI & Automation
-- LangGraph
-- LangChain
-- OpenAI GPT-4o
-- Google Gemini
-- Multi-Agent RAG
-- Prompt Engineering
-- Tool / Function Calling
-
-### Backend & Distributed Systems
-- FastAPI
-- NestJS
-- Node.js
-- Celery
-- Redis
-- BullMQ
-- REST APIs
-- Background job orchestration
-
-### Frontend
-- React
-- Next.js
-- Vite
-- Dashboard-style UI systems
-
-### Data & Infrastructure
-- PostgreSQL
-- Prisma
-- Supabase
-- pgvector
-- Docker / Docker Compose
-- Linux / Ubuntu
-
-### Web, SEO & E-Commerce
-- WordPress
-- WooCommerce
-- Shopify
-- GA4 / GTM
-- Technical SEO
-- Core Web Vitals
-- Marketplace data synchronization
+Tech stack: `Next.js`, `TypeScript`, `NestJS`, `PostgreSQL`, `Prisma`, `Redis`, `BullMQ`, `Docker Compose`
 
 ---
 
-## 📈 Engineering Highlights
+### Nexus AI Growth Engine
 
-- **90% reduction in manual operational workload** through AI-assisted automation and structured pipelines
-- **70% improvement in page speed performance** through backend and frontend optimization
-- Built **multi-tenant backend foundations** with strong isolation and clear service boundaries
-- Implemented **validation layers and replay-safe patterns** to keep AI-assisted systems reliable
-- Designed systems with a bias toward **auditability, determinism, and explainable automation**
+**Multi-tenant lead qualification and agent workflow system**  
+Repository: private, access available upon request
+
+An agentic workflow platform coordinating AI-assisted discovery, triage, and drafting for multiple concurrent clients.
+
+Highlights:
+
+- LangGraph-based state machine coordinating specialized AI agents
+- backend-enforced tenant isolation and UUID-scoped data access
+- execution audit traces for transparent AI decisions
+- explainability-first workflow design
+
+Tech stack: `Python`, `FastAPI`, `LangGraph`, `Gemini`, `OpenAI`, `Supabase`, `PostgreSQL`, `Docker`
 
 ---
 
-## 🧭 What I Like Building
+### Nexus Ingest
 
-I’m especially interested in projects involving:
+**Browser automation and distributed ingestion engine**  
+Repository: private, access available upon request
 
-- AI-assisted operator workflows
-- production-ready automation systems
-- multi-tenant SaaS products
-- ingestion + reasoning + action pipelines
-- backend systems with clear domain boundaries
-- business software where correctness matters as much as speed
+A resilient ingestion system for high-friction data collection environments where uptime, routing intelligence, and reliability matter.
+
+Highlights:
+
+- Playwright-based browser automation and validation
+- Redis-backed circuit breakers and retry orchestration
+- tiered routing logic to reduce proxy cost
+- high-volume distributed collection workflows
+
+Tech stack: `Python`, `Celery`, `Redis`, `PostgreSQL`, `Playwright`, `BeautifulSoup`, `Docker`
+
+## Toolbox
+
+**Frontend:** React, Next.js 16, TypeScript, JavaScript, Vite, Tailwind CSS v4, responsive dashboards  
+**Backend:** Python, FastAPI, Node.js, NestJS, REST APIs, server-side business logic  
+**Workflow Orchestration:** Temporal (Cloud + local), durable workflows, activity design, signal/query patterns  
+**QA and Testing:** pytest, integration testing against real databases, API verification, manual E2E, Playwright  
+**Data and Auth:** PostgreSQL, Supabase, Prisma, pgvector, Auth0 v4, RBAC, tenant-scoped access  
+**AI and Automation:** LangGraph, LangChain, OpenAI GPT-4o, Gemini, Claude, structured AI workflows, RAG, prompt engineering, Pydantic validation layers  
+**Infrastructure:** Docker, Docker Compose, Redis, BullMQ, Celery, Linux, Vercel, Render, Neon  
+**Web and E-Commerce:** WordPress, WooCommerce, Shopify, GA4, GTM, technical SEO, Core Web Vitals
+
+## Engineering Highlights
+
+- Reduced manual operational workload by up to **90%** through AI-assisted automation and structured pipelines
+- Improved platform speed and responsiveness by roughly **70%** through performance engineering
+- Built multi-tenant SaaS with strict RBAC, append-only audit trails, and JWT-enforced data isolation
+- Shipped **365 integration tests** against a real PostgreSQL database — zero mocks, full workflow coverage
+- Designed validation-first AI systems combining LLM reasoning with deterministic business logic for reliability
+- Delivered complete role-based portals for operators, managers, and executives across complex workflow products
+
+## What I Like Building
+
+I enjoy building software that helps real operators move faster without losing control: dashboards, workflow systems, internal tools, AI-assisted business processes, API-driven products, and automation platforms with clean boundaries.
 
 ---
 
