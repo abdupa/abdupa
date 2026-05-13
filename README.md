@@ -32,7 +32,7 @@ A production-deployed, 0→1 enterprise operations platform that automates the f
 
 What I built:
 
-- **17 Temporal workflows** — W1 inquiry triage routing inbound messages to W9 order intake, W10–W11 quote support, W12–W13 support cases and billing disputes, W16 supplier intake, W17 eternal Gmail polling loop, plus scheduled workflows for quote aging, reorder monitoring, dormant accounts, daily operational briefs, fulfillment alerts, and payment follow-ups
+- **16 Temporal workflows** — W1 inquiry triage routing inbound messages to W9 order intake, W10–W11 quote support, W12–W13 support cases and billing disputes, W16 supplier intake, W17 eternal Gmail polling loop, plus scheduled workflows for quote aging, reorder monitoring, dormant accounts, daily operational briefs, fulfillment alerts, and payment follow-ups
 - **Multi-channel adapters** — Gmail OAuth2 with W17 continuous polling, WhatsApp Business API (bidirectional webhook messaging), embedded web chat widget with SSE streaming and live rep handoff, Wix site chat webhook normalizer
 - **AI features** — LangGraph intent classification and AI draft generation behind human-in-the-loop approval gates; GPT-4o order document parser extracting structured line items from unstructured emails and attachments; corpus-backed pgvector semantic retrieval for catalog-aware replies; credit and inventory preflight check before order approval; BIR-compliant invoice PDF generation
 - **Role-based portal** — 12 `/ops` routes spanning five roles: rep order processing queue, manager team dashboard, executive business view, reporting dashboard, live chat interface, approval queue, exception panel, product catalog, and tenant settings
