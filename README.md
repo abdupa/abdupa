@@ -56,25 +56,89 @@ Tech stack: `React / Next.js`, `TypeScript`, `Vercel`
 
 ### GadgetPH
 
-**Production web platform for product content, SEO, and automation**  
+**Production web platform for AI-powered product content, SEO automation, WordPress tooling, and distributed data workflows**  
 Live site: https://gadgetph.com/
 
-GadgetPH is a live production platform where I led full-stack development, automation, performance optimization, data workflows, and internal tooling.
+GadgetPH is a live production web platform serving a large Philippine consumer electronics audience. I designed and implemented AI-driven automation systems, distributed data pipelines, custom WordPress plugins, and SEO infrastructure to support product publishing, price comparison, catalog management, and content operations at scale.
 
-What I built:
+The platform combines AI-assisted workflows with full-stack engineering, content automation, custom WooCommerce tooling, and validation-first publishing pipelines to reduce manual work while improving reliability, speed, and SEO performance.
 
-- business-critical web systems for product data, content publishing, SEO, and admin workflows
-- ingestion and processing pipelines using Scrapy, Playwright, and structured automation
-- internal tools for non-technical operators managing large catalogs and publishing tasks
-- performance improvements through caching, backend optimization, AJAX batch processing, and frontend delivery work
-- distributed task workflows using Celery and Redis
+---
 
-Results:
+#### Key Contributions
 
-- reduced manual operational workload by up to **90%**
-- improved website speed and responsiveness by roughly **70%**
+##### AI Workflow Automation
 
-Tech stack: `PHP`, `WordPress`, `WooCommerce`, `JavaScript`, `Python`, `Scrapy`, `Playwright`, `Celery`, `Redis`, `PostgreSQL`, `GA4`, `GTM`, `SEO`
+- Designed multi-stage AI pipelines that transformed raw scraped marketplace data into structured, SEO-ready, publishable outputs using LLM reasoning, validation, and feedback loops.
+- Automated content generation and data-processing workflows, reducing manual operational workload by up to **90%**.
+- Built repeatable AI-assisted workflows for product data enrichment, content transformation, and publishing preparation.
+
+##### Prompt-Driven and Agent-Based Systems
+
+- Built LangGraph-based orchestration workflows to coordinate planning, retrieval, validation, and synthesis across multi-step AI-assisted tasks.
+- Applied advanced prompt engineering and workflow refinement across structured generation, content transformation, and operational automation use cases.
+- Structured AI execution flows to improve traceability, control execution paths, and output reliability.
+
+##### WordPress Plugin Development
+
+- Designed and built two production WordPress plugins deployed live on GadgetPH.com and used by thousands of active site visitors.
+
+**Product Offers Plugin v2.3.1**
+
+A multi-source price comparison system featuring:
+
+- Dynamic price comparison tables
+- Historical price charts using Chart.js
+- Price drop email alerts
+- Custom database tables, including `wp_price_alerts`
+- AJAX handlers with nonce security
+- WooCommerce product integration
+- Admin notification workflows
+
+**Smartphone Price List Plugin v5.0.0**
+
+A dynamic, filterable price list system featuring:
+
+- Price change tracking
+- Batch processing for large product catalogs
+- Google Sheets price data integration
+- Admin cache management UI with progress tracking
+- Shortcode-based rendering through `[gph_price_list]`
+- Specs processor pipeline for structured product data
+
+##### SEO and Platform Engineering
+
+- Implemented a full technical SEO stack, including Google Analytics 4, Google Tag Manager, Google Search Console integration, schema markup, XML sitemaps, and structured metadata across product pages.
+- Optimized Core Web Vitals through caching strategies, lazy loading, asynchronous asset delivery, and backend performance improvements, increasing page speed scores by up to **70%**.
+- Integrated the Google Search Console API to provide live SEO performance feedback and support data-driven content iteration.
+- Built a content automation pipeline that delivered AI-generated, SEO-optimized product content directly into live WooCommerce product pages.
+
+##### Distributed Processing and Reliability
+
+- Implemented scalable ingestion pipelines using Scrapy, Playwright, Celery, and Redis to process thousands of product records concurrently.
+- Improved throughput, resilience, and operational reliability through asynchronous task distribution and queue-based processing.
+- Designed workflows capable of handling large product catalogs, marketplace updates, and recurring content refreshes.
+
+##### Validation and Quality Control
+
+- Developed Pydantic-based validation layers to sanitize, normalize, and standardize AI-generated outputs before publishing.
+- Reduced workflow failure risk caused by inconsistent or non-deterministic model responses.
+- Added quality-control steps to improve data consistency, publishing reliability, and downstream SEO performance.
+
+---
+
+#### Results
+
+- Reduced manual operational workload by up to **90%** through AI-assisted workflow automation and structured pipelines.
+- Improved website speed and responsiveness by up to **70%** through caching, lazy loading, asynchronous asset delivery, and backend optimization.
+- Built production WordPress and WooCommerce tooling used on a live consumer electronics platform.
+- Enabled scalable product publishing, price tracking, catalog updates, and SEO optimization through distributed workflows and AI-assisted automation.
+
+---
+
+#### Tech Stack
+
+`PHP` · `WordPress` · `WooCommerce` · `JavaScript` · `Chart.js` · `Python` · `FastAPI` · `LangGraph` · `OpenAI GPT-4o` · `Pydantic` · `Scrapy` · `Playwright` · `Celery` · `Redis` · `PostgreSQL` · `Google Sheets API` · `Google Search Console API` · `GA4` · `GTM` · `Schema Markup` · `SEO`
 
 ---
 
