@@ -9,10 +9,6 @@
 I build production-ready AI systems, multi-tenant SaaS platforms, and automation pipelines —
 where reliability, auditability, and real business outcomes matter.
 
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=abdupa&show_icons=true&theme=default&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github)](https://github.com/abdupa)
-&nbsp;&nbsp;
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=abdupa&layout=compact&hide_border=true&langs_count=8&count_private=true)](https://github.com/abdupa)
-
 </div>
 
 ---
