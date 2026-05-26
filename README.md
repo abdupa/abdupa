@@ -36,7 +36,7 @@ where reliability, auditability, and real business outcomes matter.
 
 ## Experience
 
-### AI Operations Platform
+### Automatriq.com
 `February 2025 – Present` · **Multi-tenant B2B SaaS — wholesale & distribution operations automation**  
 🌐 [automatriq.com](https://www.automatriq.com) · *Repository: private, access on request*
 
