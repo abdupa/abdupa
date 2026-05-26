@@ -34,11 +34,11 @@ where reliability, auditability, and real business outcomes matter.
 
 ---
 
-## Projects
+## Experience
 
 ### AI Operations Platform
-**Multi-tenant B2B SaaS for wholesale and distribution operations**
-Live: [automatriq.com](https://www.automatriq.com) · *Repository: private, access on request*
+`February 2025 – Present` · **Multi-tenant B2B SaaS — wholesale & distribution operations automation**  
+🌐 [automatriq.com](https://www.automatriq.com) · *Repository: private, access on request*
 
 A production-deployed, 0→1 enterprise operations platform automating the full order-to-cash and supplier lifecycle for B2B wholesale and distribution businesses.
 
@@ -57,8 +57,8 @@ A production-deployed, 0→1 enterprise operations platform automating the full 
 ---
 
 ### GadgetPH
-**Production web platform — AI content automation, WordPress tooling, distributed data pipelines, SEO**
-Live: [gadgetph.com](https://gadgetph.com/) · *Repository: private*
+`January 2021 – January 2025` · **Production web platform — AI content automation, WordPress tooling, distributed data pipelines, SEO**  
+🌐 [gadgetph.com](https://gadgetph.com/) · *Repository: private*
 
 A live consumer electronics platform in the Philippines. I designed and implemented the full AI content automation system, distributed scraping infrastructure, custom WordPress plugins, and SEO stack that powers product publishing at scale.
 
@@ -76,8 +76,10 @@ A live consumer electronics platform in the Philippines. I designed and implemen
 
 ---
 
+## Projects
+
 ### Dealer Flow AI
-**Multi-tenant SaaS for automotive lead conversion**
+**Multi-tenant SaaS for automotive lead conversion**  
 *Repository: private, access on request*
 
 Helps dealership teams move inbound leads toward booked test drives — lead intake, AI-assisted qualification, deterministic inventory matching, appointment scheduling, and staff dashboards.
@@ -91,7 +93,7 @@ Helps dealership teams move inbound leads toward booked test drives — lead int
 ---
 
 ### Nexus AI Growth Engine
-**Multi-tenant lead qualification and agent workflow system**
+**Multi-tenant lead qualification and agent workflow system**  
 *Repository: private, access on request*
 
 Agentic workflow platform coordinating AI-assisted discovery, triage, and drafting across multiple concurrent clients.
@@ -105,7 +107,7 @@ Agentic workflow platform coordinating AI-assisted discovery, triage, and drafti
 ---
 
 ### Nexus Ingest
-**Browser automation and distributed ingestion engine**
+**Browser automation and distributed ingestion engine**  
 [Public repo →](https://github.com/abdupa/nexus-ingest)
 
 Resilient ingestion system for high-friction data collection environments.
