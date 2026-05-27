@@ -39,6 +39,7 @@ where reliability, auditability, and real business outcomes matter.
 ### Automatriq.com
 `February 2025 – Present` · **Multi-tenant B2B SaaS — wholesale & distribution operations automation**  
 🌐 [automatriq.com](https://www.automatriq.com) · *Repository: private, access on request*
+- **Technical documentation** — [Full Architecture Manual →](https://www.automatriq.com/docs/technical-manual-v2.html)
 
 A production-deployed, 0→1 enterprise operations platform automating the full order-to-cash and supplier lifecycle for B2B wholesale and distribution businesses.
 
@@ -50,7 +51,6 @@ A production-deployed, 0→1 enterprise operations platform automating the full 
 - **Role-based portal** — 12 `/ops` routes across five roles: rep order queue, manager dashboard, executive view, approval queue, exception panel, product catalog, live chat interface, and tenant settings
 - **Security and isolation** — Auth0 v4 JWKS verification, `tenant_id` derived from JWT only (never request body), append-only audit trail on every critical action
 - **Test coverage** — 303 integration tests, 25 test files, zero mocks, real PostgreSQL — full workflow, activity, channel adapter, AI feature, and RBAC coverage
-- **Technical documentation** — [Full Architecture Manual →](https://www.automatriq.com/docs/technical-manual-v2.html) *(deployed on Vercel)*
 
 `Python` `FastAPI` `Temporal` `LangGraph` `OpenAI GPT-4o` `PostgreSQL` `pgvector` `Next.js 16` `TypeScript` `Tailwind CSS v4` `Auth0` `Docker` `GCP` `Vercel` `Render` `Neon` `Redis` `Upstash` `pytest`
 
