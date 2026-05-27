@@ -38,7 +38,7 @@ where reliability, auditability, and real business outcomes matter.
 
 ### Automatriq.com
 `February 2025 – Present` · **Enterprise, Multi-tenant B2B SaaS — wholesale & distribution operations automation**  
-🌐 [automatriq.com](https://www.automatriq.com) · *Repository: private, access on request*
+🌐 [automatriq.com](https://www.automatriq.com) · *Repository: private, access on request* <br>
 **Technical documentation** — [Full Architecture Manual →](https://www.automatriq.com/docs/technical-manual-v2.html)
 
 A production-deployed, 0→1 enterprise operations platform automating the full order-to-cash and supplier lifecycle for B2B wholesale and distribution businesses.
