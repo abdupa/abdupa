@@ -37,20 +37,29 @@ where reliability, auditability, and real business outcomes matter.
 ## Experience
 
 ### Automatriq.com
-`February 2025 – Present` · **Multi-tenant B2B SaaS — wholesale & distribution operations automation**  
+`February 2025 – Present` · **Enterprise, Multi-tenant B2B SaaS — wholesale & distribution operations automation**  
 🌐 [automatriq.com](https://www.automatriq.com) · *Repository: private, access on request*
-- **Technical documentation** — [Full Architecture Manual →](https://www.automatriq.com/docs/technical-manual-v2.html)
+**Technical documentation** — [Full Architecture Manual →](https://www.automatriq.com/docs/technical-manual-v2.html)
 
 A production-deployed, 0→1 enterprise operations platform automating the full order-to-cash and supplier lifecycle for B2B wholesale and distribution businesses.
 
-**What I built:**
+**Core Systems Built:**
 
-- **14 Temporal workflows** — W1 inquiry triage routing inbound messages to W9 order intake, W12–W13 support cases and billing disputes, W16 supplier intake, W17 eternal Gmail polling loop, plus scheduled workflows for quote aging, reorder monitoring, dormant accounts, daily operational briefs, fulfillment alerts, and payment follow-ups
-- **Multi-channel adapters** — Gmail OAuth2 with continuous polling, WhatsApp Business API (bidirectional), embedded web chat widget with SSE streaming and live rep handoff, Wix Chat webhook normalizer
-- **AI layer** — LangGraph intent classification and draft generation behind human-in-the-loop approval gates; GPT-4o order document parser extracting structured line items from unstructured emails; corpus-backed pgvector semantic retrieval for catalog-aware replies; credit and inventory preflight check before order approval
-- **Role-based portal** — 12 `/ops` routes across five roles: rep order queue, manager dashboard, executive view, approval queue, exception panel, product catalog, live chat interface, and tenant settings
-- **Security and isolation** — Auth0 v4 JWKS verification, `tenant_id` derived from JWT only (never request body), append-only audit trail on every critical action
-- **Test coverage** — 303 integration tests, 25 test files, zero mocks, real PostgreSQL — full workflow, activity, channel adapter, AI feature, and RBAC coverage
+- **Durable workflow engine** — 14 Temporal workflows covering the full ops lifecycle: inquiry triage (W1), order intake (W9), support cases and billing disputes (W12–W13), supplier intake (W16), eternal Gmail polling loop (W17), plus 6 scheduled monitors for quote aging, reorder, dormant accounts, daily briefs, fulfillment alerts, and payment follow-ups
+
+- **Gmail inbound email automation** — eternal Temporal polling workflow (W17) continuously monitors a Gmail inbox via OAuth2 refresh (no webhooks, no missed messages); inbound emails are normalized and routed through the full triage pipeline — LangGraph classifies intent, GPT-4o generates a catalog-grounded draft reply, and the draft is queued in the `/ops` approval panel for rep review; approved replies are sent via Gmail API with full thread continuity
+
+- **WhatsApp Business integration** — bidirectional messaging via WhatsApp Business Cloud API; inbound messages verified by X-Hub-Signature-256 HMAC and normalized into the same canonical inquiry pipeline as email — same intent classification, same draft generation, same approval gate; outbound delivery sends approved replies back to the customer's WhatsApp thread
+
+- **Embedded web chat AI agent** — real-time AI sales assistant deployable on any client site via a single script tag; SSE streaming with typing indicators, catalog-grounded replies via pgvector RAG, live rep handoff, and full session continuity; intent classified by LangGraph before each response
+
+- **AI layer** — LangGraph intent classification and context-aware draft generation behind human-in-the-loop approval gates; GPT-4o structured order document parser extracting line items from unstructured emails; credit and inventory preflight checks before order approval
+
+- **Multi-tenant ops portal** — 12 `/ops` routes across 5 roles: rep order queue, manager dashboard, executive view, approval queue, exception panel, product catalog, live chat console, and tenant settings
+
+- **Security & multi-tenancy** — Auth0 v4 JWKS verification, `tenant_id` enforced from JWT at every query boundary (never request body), append-only audit trail on every critical action
+
+- **Test coverage** — 303 integration tests, 25 files, zero mocks, all against real PostgreSQL — full workflow, activity, channel adapter, AI feature, and RBAC coverage
 
 `Python` `FastAPI` `Temporal` `LangGraph` `OpenAI GPT-4o` `PostgreSQL` `pgvector` `Next.js 16` `TypeScript` `Tailwind CSS v4` `Auth0` `Docker` `GCP` `Vercel` `Render` `Neon` `Redis` `Upstash` `pytest`
 
