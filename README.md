@@ -59,7 +59,7 @@ A production-deployed, 0→1 enterprise operations platform automating the full 
 
 - **Security & multi-tenancy** — Auth0 v4 JWKS verification, `tenant_id` enforced from JWT at every query boundary (never request body), append-only audit trail on every critical action
 
-- **Test coverage** — 303 integration tests, 25 files, zero mocks, all against real PostgreSQL — full workflow, activity, channel adapter, AI feature, and RBAC coverage
+- **Test coverage** — 365 integration tests, 25 files, zero mocks, all against real PostgreSQL — full workflow, activity, channel adapter, AI feature, and RBAC coverage
 
 `Python` `FastAPI` `Temporal` `LangGraph` `OpenAI GPT-4o` `PostgreSQL` `pgvector` `Next.js 16` `TypeScript` `Tailwind CSS v4` `Auth0` `Docker` `GCP` `Vercel` `Render` `Neon` `Redis` `Upstash` `pytest`
 
