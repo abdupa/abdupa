@@ -15,8 +15,8 @@ where reliability, auditability, and real business outcomes matter.
 
 ## Engineering Highlights
 
-- **303 integration tests** — zero mocks, all against a real PostgreSQL database, full workflow and RBAC coverage
-- **14 Temporal workflows** in production — inquiry triage, order intake, support cases, scheduling monitors, eternal polling loop, and daily briefs
+- **365 integration tests** — zero mocks, all against a real PostgreSQL database, full workflow and RBAC coverage
+- **17 Temporal workflows** in production — inquiry triage, order intake, support cases, scheduling monitors, eternal polling loop, and daily briefs
 - **Multi-tenant SaaS** with JWT-enforced data isolation, append-only audit trails, and per-tenant RBAC at every query boundary
 - **90% manual workload reduction** delivered through AI-assisted automation pipelines on a live production platform
 - **70% platform speed improvement** through performance engineering: caching, async delivery, Core Web Vitals optimization
@@ -37,7 +37,7 @@ where reliability, auditability, and real business outcomes matter.
 ## Experience
 
 ### Automatriq.com
-`February 2025 – Present` · **Enterprise, Multi-tenant B2B SaaS — wholesale & distribution operations automation**  
+`January 2025 – Present` · **Enterprise, Multi-tenant B2B SaaS — wholesale & distribution operations automation**  
 🌐 [automatriq.com](https://www.automatriq.com) · *Repository: private, access on request* <br>
 **Technical documentation** — [Full Architecture Manual →](https://www.automatriq.com/docs/technical-manual-v2.html)
 
