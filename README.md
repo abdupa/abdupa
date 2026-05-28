@@ -45,7 +45,7 @@ A production-deployed, 0→1 enterprise operations platform automating the full 
 
 **Core Systems Built:**
 
-- **Durable workflow engine** — 14 Temporal workflows covering the full ops lifecycle: inquiry triage (W1), order intake (W9), support cases and billing disputes (W12–W13), supplier intake (W16), eternal Gmail polling loop (W17), plus 6 scheduled monitors for quote aging, reorder, dormant accounts, daily briefs, fulfillment alerts, and payment follow-ups
+- **Durable workflow engine** — 17 Temporal workflows covering the full ops lifecycle: inquiry triage (W1), order intake (W9), support cases and billing disputes (W12–W13), supplier intake (W16), eternal Gmail polling loop (W17), plus 6 scheduled monitors for quote aging, reorder, dormant accounts, daily briefs, fulfillment alerts, and payment follow-ups
 
 - **Gmail inbound email automation** — eternal Temporal polling workflow (W17) continuously monitors a Gmail inbox via OAuth2 refresh (no webhooks, no missed messages); inbound emails are normalized and routed through the full triage pipeline — LangGraph classifies intent, GPT-4o generates a catalog-grounded draft reply, and the draft is queued in the `/ops` approval panel for rep review; approved replies are sent via Gmail API with full thread continuity
 
